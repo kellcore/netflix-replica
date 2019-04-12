@@ -45,7 +45,222 @@
     font-style: normal;
 
 }
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
 body {
     background-color: #141414;
+    font-family: 'pier_sansregular';
+    color: white;
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    padding: 0 60px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header a.header-logo .logo {
+    width: 90px;
+    height: 55px;
+    display: block;
+    background: url('../images/netflix-logo.svg') no-repeat center center;
+    background-size: contain;
+    will-change: transform;
+    transition: .25s ease-in-out;
+}
+
+header a.header-logo .logo:hover {
+    transform: scale(1.2);
+}
+
+header ul.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    margin-left: 40px;
+}
+
+header ul.nav-links li a{
+    font-family: 'pier_sanslight';
+    color: #e5e5e5;
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+header .nav-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   margin: 0 0 0 auto;
+}
+
+header .nav-container ul.secondary-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header ul.secondary-links li a{
+    color: #e5e5e5;
+    font-size: 14px;
+    padding: 0 8px;
+    font-family: 'pier_sanslight';
+    text-transform: uppercase;
+}
+
+header .nav-container i.search-icon{
+    margin-right: 10px;
+}
+
+header .nav-container i.notifications-icon{
+    margin-left: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.profile-selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    margin-top: 65px;
+}
+
+.profile-selection-container h1 {
+    font-family: 'pier_sansregular';
+    font-size: 52px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.profile-selection-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    margin: 10px 20px;
+}
+
+.profile-container .profile-image{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: url('../images/dog.png')no-repeat center center;
+    background-size: contain;
+    border: 5px solid #1F1F1F;
+    transition: .25s ease-in-out;
+}
+
+.profile-container:nth-of-type(2) .profile-image{
+    background: url('../images/face-red.png') no-repeat center center;
+    background-size: contain;
+}
+
+.profile-container:nth-of-type(3) .profile-image{
+    background: url('../images/face-green.png') no-repeat center center;
+    background-size: contain;
+}
+
+.profile-container:nth-of-type(4) .profile-image{
+    background: url('../images/face-yellow.png') no-repeat center center;
+    background-size: contain;
+}
+
+.profile-container:nth-of-type(5) .profile-image{
+    background: url('../images/kids-section.png') no-repeat center center;
+    background-size: contain;
+}
+
+.profile-container:hover .profile-image{
+    border-color: #ffffff;
+}
+
+.profile-container h3 {
+    font-family: 'pier_sansregular';
+    font-size: 16px;
+    color: #808080;
+    transition: .25s ease-in-out;
+}
+
+.profile-container:hover h3{
+    color: #ffffff;
+}
+
+.profile-selection-container .button{
+    text-transform: uppercase;
+    margin-top: 80px;
+    color: #808080;
+    border: 2px solid #808080;
+    letter-spacing: 2.5px;
+    min-width: 250px;
+    min-height: 40px;
+    text-align: center;
+    padding: 10px 20px;
+    transition: .25s ease-in-out;
+}
+
+.profile-selection-container .button:hover{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.featured-section{
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-section:after{
+    content: '';
+    width: 100%;
+    height: 125px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(to top, #141414, transparent);
+}
+
+.featured-section video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
