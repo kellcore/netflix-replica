@@ -85,7 +85,11 @@ header a.header-logo .logo:hover {
     transform: scale(1.2);
 }
 
-header ul.nav-links{
+.homepage header {
+    background: linear-gradient(to bottom, #141414, transparent);
+}
+
+.homepage header ul.nav-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -95,41 +99,89 @@ header ul.nav-links{
     margin-left: 40px;
 }
 
-header ul.nav-links li a{
+.homepage header ul.nav-links li a {
     font-family: 'pier_sanslight';
     color: #e5e5e5;
     font-size: 14px;
     padding: 0 8px;
+    will-change: transform;
+    transition: .2s ease-in-out;
+    letter-spacing: .2px;
 }
 
-header .nav-container{
+.homepage header ul.nav-links li a:hover {
+    color: #808080;
+}
+
+.homepage header .nav-container {
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
    margin: 0 0 0 auto;
 }
 
-header .nav-container ul.secondary-links{
+.homepage header .nav-container ul.secondary-links {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-header ul.secondary-links li a{
+.homepage header ul.secondary-links li a {
     color: #e5e5e5;
     font-size: 14px;
     padding: 0 8px;
     font-family: 'pier_sanslight';
     text-transform: uppercase;
+    will-change: transform;
+    transition: .2s ease-in-out;
 }
 
-header .nav-container i.search-icon{
+.homepage header ul.secondary-links li a:hover {
+    color: #808080;
+}
+
+.homepage header .nav-container i.search-icon {
     margin-right: 10px;
 }
 
-header .nav-container i.notifications-icon{
+.homepage header .nav-container i.notifications-icon {
     margin-left: 10px;
+}
+
+.homepage header .nav-container i.notifications-icon::after{
+    content: '3';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #B9090B;
+    color: #fff;
+    font-family: 'pier_sansbold';
+    font-size: 10px;
+    position: absolute;
+    /*top: -1px;
+    right: -3px;*/
+}
+
+.homepage header .nav-container .user-icon {
+    width: 25px;
+    height: 25px;
+    background: url('../images/dog.png')no-repeat center center;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.homepage header .nav-container .arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 5px solid #ffffff;
+    margin-left: 5px;
 }
 
 main {
