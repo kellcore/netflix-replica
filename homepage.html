@@ -12,33 +12,65 @@
 
 <body class="homepage">
     <header>
-                <a class="header-logo" href="index.html">
-                        <div class="logo"></div>
-                    </a> 
-               <!-- <i class="material-icons"> menu </i> -->
-                   <ul class="nav-links">
-                    <li> <a href="homepage.html">Home</a> </li>
-                    <li> <a href="homepage.html">TV Shows</a> </li>
-                    <li> <a href="homepage.html">Movies</a> </li>
-                    <li> <a href="homepage.html">Recently Added</a> </li>
-                    <li> <a href="homepage.html">My List</a> </li>
-                   </ul>
-                   <div class="nav-container">
-                    <i class="material-icons search-icon"> search </i>
-                    <ul class="secondary-links">
-                    <li> <a href="homepage.html"> Kids </a> </li>
-                    <li> <a href="homepage.html"> DVD </a> </li>
-                    </ul>
-                    <i class="material-icons notifications-icon"> notifications </i>
-                    <div class="user-icon"> </div>
-                    <div class="arrow-down"></div>
-                </div>
+        <a class="header-logo" href="index.html">
+            <div class="logo"></div>
+        </a>
+        <!-- <i class="material-icons"> menu </i> -->
+        <ul class="nav-links">
+            <li> <a href="homepage.html">Home</a> </li>
+            <li> <a href="homepage.html">TV Shows</a> </li>
+            <li> <a href="homepage.html">Movies</a> </li>
+            <li> <a href="homepage.html">Recently Added</a> </li>
+            <li> <a href="homepage.html">My List</a> </li>
+        </ul>
+        <div class="nav-container">
+            <i class="material-icons search-icon"> search </i>
+            <ul class="secondary-links">
+                <li> <a href="homepage.html"> Kids </a> </li>
+                <li> <a href="homepage.html"> DVD </a> </li>
+            </ul>
+            <i class="material-icons notifications-icon"> notifications </i>
+            <div class="user-icon"> </div>
+            <div class="arrow-down"></div>
+        </div>
     </header>
     <section class="featured-section">
-        <video width="100%" height="100%" autoplay muted loop>
-            <source src="videos/stock-video-waves.mp4">
-        </video>
+        <div class="featured-section-container">
+            <div class="featured-section-content">
+                <div class="featured-section-buttons">
+                    <button id="play-pause" class="play-pause-button"> Play
+                        <!-- <span class="play">
+                            <i class="material-icons">
+                                play_arrow
+                            </i> -->
+                            <!-- <span id="play-button-text"> Play </span> 
+                        </span> -->
+                        <!-- <span class="pause">
+                            <i class="material-icons">
+                                pause
+                            </i>
+                            <span id="pause-button-text"> Pause </span>
+                        </span> -->
+                    </button>
+                    <button class="my-list-button"> 
+                        <span class="my-list-button">
+                                <i class="material-icons">
+                                        add
+                                        </i>
+                                        My List
+                        </span>
+                    </button>
+                </div> <!-- closes featured section buttons -->
+                <p class="featured-section-description"> When an insatiable great white shark terrorizes Amity Island,
+                    a police chief, an oceanographer, and a grizzled shark hunter seek to destroy the beast. </p>
+            </div> <!-- closes featured-section-content -->
+            <video id="waves-video" width="100%" height="100%" autoplay muted loop>
+                <source src="videos/stock-video-waves.mp4">
+            </video>
+        </div> <!-- closes featured-section-container -->
     </section>
+    <main></main>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
