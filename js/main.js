@@ -15,8 +15,10 @@ playPause.addEventListener("click", playControls);
 function playControls() {
     if (wavesVideo.paused) {
         wavesVideo.play();
-        playPause.innerHTML = "Play";
+        playPause.innerHTML = `<i class="material-icons"> pause </i> Pause`;
     }
-    else wavesVideo.pause();
-    playPause.innerHTML = "Pause"; 
+    else { 
+        wavesVideo.pause();
+        playPause.innerHTML = `<i class="material-icons"> play_arrow </i> Play`;
+    } 
 };
