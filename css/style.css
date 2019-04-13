@@ -91,6 +91,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 header a.header-logo .logo {
@@ -186,9 +187,6 @@ header.homepage {
     color: #fff;
     font-family: 'pier_sansbold';
     font-size: 10px;
-    position: absolute;
-    /*top: -1px;
-    right: -3px;*/
 }
 
 .homepage header .nav-container .user-icon {
