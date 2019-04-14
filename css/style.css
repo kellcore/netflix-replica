@@ -138,6 +138,14 @@ header.homepage {
     color: #808080;
 }
 
+.homepage header .nav-menu-icon {
+    display: none;
+    font-size: 30px;
+    margin-left: 20px;
+    will-change: transform;
+    transition: .2s ease-in-out;
+}
+
 .homepage header .nav-container {
    display: flex;
    flex-direction: row;
@@ -174,7 +182,7 @@ header.homepage {
     margin-left: 10px;
 }
 
-.homepage header .nav-container i.notifications-icon::after{
+.homepage header .nav-container i.notifications-icon:after{
     content: '3';
     display: flex;
     flex-direction: row;
@@ -187,6 +195,8 @@ header.homepage {
     color: #fff;
     font-family: 'pier_sansbold';
     font-size: 10px;
+    position: absolute;
+    top: -1px;
 }
 
 .homepage header .nav-container .user-icon {
@@ -200,10 +210,11 @@ header.homepage {
 .homepage header .nav-container .arrow-down {
     width: 0; 
     height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
     border-top: 5px solid #ffffff;
     margin-left: 5px;
+    margin-top: 10px;
 }
 
 /* index main content */
@@ -407,7 +418,7 @@ main {
 #new-releases-container {
     margin: -105px 0 45px 0;
     position: relative;
-    z-index: 100;
+    /*z-index: 5;*/
 }
 
 .movie-list-container {
@@ -443,7 +454,7 @@ main {
     will-change: transform;
     transition: .35s ease-in-out;
     position: relative;
-    z-index: 101;
+    z-index: 25;
 }
 
 .movie-list-container .movie-list-row .movie-list-item .movie-list-item-container {
